@@ -1,92 +1,134 @@
 <!doctype html>
 <html lang="es">
 <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
 
-<!-- Bootstrap CSS -->
-<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-<link rel="stylesheet" href="css/main.css">
-
-<title>Centro Médico San Agustín</title>
-
+  <title>Centro Médico San Agustín - Inicio</title>
 </head>
-
 <body>
 
-<!-- JUMBOTRON -->
-<div class="jumbotron text-center">
-  <h1 class="display-4">Centro Médico San Agustín</h1>
-  <p class="lead">Cuidamos tu salud con profesionales especializados y tecnología moderna.</p>
-  <p class="lead">Cartavio</p>
-</div>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <span class="oi oi-plus mr-2"></span>
+        Centro Médico San Agustín
+      </a>
 
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContenido"
+        aria-controls="navbarContenido" aria-expanded="false" aria-label="Menú de navegación">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-<!-- CONTAINER -->
-<div class="container">
+      <div class="collapse navbar-collapse" id="navbarContenido">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">
+              <span class="oi oi-home mr-1"></span> Inicio
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="servicios.html">
+              <span class="oi oi-briefcase mr-1"></span> Servicios
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="especialistas.html">
+              <span class="oi oi-people mr-1"></span> Especialistas
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.html">
+              <span class="oi oi-envelope-closed mr-1"></span> Contacto
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-  <!--  FILA CON COLUMNAS RESPONSIVE -->
-  <div class="row">
+  <!-- JUMBOTRON -->
+  <div class="jumbotron text-center mb-0">
+    <h1 class="display-4">Centro Médico San Agustín</h1>
+    <p class="lead">Cuidamos tu salud con profesionales especializados y tecnología moderna.</p>
+    <p class="lead">
+      <span class="oi oi-map-marker mr-1"></span> Cartavio
+    </p>
+  </div>
 
-    <div class="col-md-4">
-      <h3>Atención Profesional</h3>
-      <p>Contamos con médicos especialistas comprometidos con brindar atención médica de alta calidad.</p>
+  <div class="container mt-4">
+
+    <!-- BREADCRUMB -->
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item active" aria-current="page">
+          <span class="oi oi-home mr-1"></span> Inicio
+        </li>
+      </ol>
+    </nav>
+
+    <div class="row">
+      <div class="col-md-4">
+        <h3><span class="oi oi-person mr-2"></span>Atención Profesional</h3>
+        <p>Contamos con médicos especialistas comprometidos con brindar atención médica de alta calidad.</p>
+      </div>
+
+      <div class="col-md-4">
+        <h3><span class="oi oi-monitor mr-2"></span>Tecnología Moderna</h3>
+        <p>Nuestro centro médico dispone de equipos modernos para diagnósticos precisos y tratamientos efectivos.</p>
+      </div>
+
+      <div class="col-md-4">
+        <h3><span class="oi oi-clock mr-2"></span>Atención Rápida</h3>
+        <p>Ofrecemos atención eficiente y rápida para que recibas el cuidado médico que necesitas sin largas esperas.</p>
+      </div>
     </div>
 
-    <div class="col-md-4">
-      <h3>Tecnología Moderna</h3>
-      <p>Nuestro centro médico dispone de equipos modernos para diagnósticos precisos y tratamientos efectivos.</p>
-    </div>
+    <hr>
 
-    <div class="col-md-4">
-      <h3>Atención Rápida</h3>
-      <p>Ofrecemos atención eficiente y rápida para que recibas el cuidado médico que necesitas sin largas esperas.</p>
+    <div class="row">
+      <div class="col-sm-4 mb-3">
+        <h4>Consulta General</h4>
+        <p>Atención médica para diagnóstico y tratamiento de enfermedades comunes.</p>
+        <a class="btn btn-primary" href="servicios.html">
+          <span class="oi oi-eye mr-1"></span> Ver más
+        </a>
+      </div>
+
+      <div class="col-sm-4 mb-3">
+        <h4>Laboratorio Clínico</h4>
+        <p>Realizamos análisis clínicos con resultados rápidos y confiables.</p>
+        <a class="btn btn-primary" href="servicios.html">
+          <span class="oi oi-eye mr-1"></span> Ver más
+        </a>
+      </div>
+
+      <div class="col-sm-4 mb-3">
+        <h4>Emergencias</h4>
+        <p>Servicio de emergencias disponible para atender situaciones urgentes.</p>
+        <a class="btn btn-primary" href="servicios.html">
+          <span class="oi oi-eye mr-1"></span> Ver más
+        </a>
+      </div>
     </div>
 
   </div>
 
-
-  <hr>
-
-
-  <!-- LISTA DE SERVICIOS MÉDICOS -->
-  <div class="row">
-
-    <div class="col-sm-4">
-      <h4>Consulta General</h4>
-      <p>Atención médica para diagnóstico y tratamiento de enfermedades comunes.</p>
-      <button class="btn btn-primary">Ver más</button>
+  <footer class="bg-dark text-white mt-4 p-4 text-center">
+    <div class="container">
+      <p class="mb-1">© 2026 Centro Médico San Agustín</p>
+      <p class="mb-1"><span class="oi oi-map-marker mr-1"></span> Dirección: Cartavio - La Libertad</p>
+      <p class="mb-0"><span class="oi oi-phone mr-1"></span> Teléfono: +51 999 999 999</p>
     </div>
+  </footer>
 
-    <div class="col-sm-4">
-      <h4>Laboratorio Clínico</h4>
-      <p>Realizamos análisis clínicos con resultados rápidos y confiables.</p>
-      <button class="btn btn-primary">Ver más</button>
-    </div>
-
-    <div class="col-sm-4">
-      <h4>Emergencias</h4>
-      <p>Servicio de emergencias disponible para atender situaciones urgentes.</p>
-      <button class="btn btn-primary">Ver más</button>
-    </div>
-
-  </div>
-
-</div>
-
-<footer class="bg-dark text-white mt-4 p-4 text-center">
-  <div class="container">
-    <p class="mb-1">© 2026 Centro Médico San Agustín</p>
-    <p class="mb-1">Dirección: Cartavio - La Libertad</p>
-    <p class="mb-0">Teléfono: +51 999 999 999</p>
-  </div>
-</footer>
-
-<!-- JS -->
-<script src="node_modules/jquery/dist/jquery.min.js"></script>
-<script src="node_modules/popper.js/dist/popper.min.js"></script>
-<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
 </html>

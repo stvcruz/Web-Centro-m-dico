@@ -1,45 +1,28 @@
-/* Estilo general de la página */
-body{
-    background-color: #f5f7fa;
-    font-family: Arial, Helvetica, sans-serif;
+body {
+  padding-top: 70px;
 }
 
-/* Jumbotron */
-.jumbotron{
-    background-color: #007bff;
-    color: white;
-    padding: 60px 30px;
-    margin-bottom: 30px;
+.jumbotron {
+  background-color: #e9f5ff;
+  margin-bottom: 0;
 }
 
-/* Títulos */
-h1, h3, h4{
-    font-weight: bold;
+footer {
+  margin-top: 40px;
 }
 
-/* Secciones de características */
-.container .row div{
-    margin-bottom: 20px;
+.navbar-brand,
+.nav-link,
+.breadcrumb-item,
+.btn,
+h1,
+h3,
+h4,
+h5 {
+  display: inline-flex;
+  align-items: center;
 }
 
-/* Tarjetas de servicios */
-.servicio{
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
-    text-align: center;
-}
-
-/* Botones */
-.btn-primary{
-    margin-top: 10px;
-}
-
-/* Responsive pequeños ajustes */
-@media (max-width:768px){
-    .jumbotron{
-        padding: 40px 20px;
-        text-align: center;
-    }
+.oi {
+  font-size: 14px;
 }
