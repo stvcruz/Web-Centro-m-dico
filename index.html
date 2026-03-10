@@ -13,7 +13,7 @@
 <body>
 
   <!-- NAVBAR -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top shadow-sm">
     <div class="container">
       <a class="navbar-brand" href="index.html">
         <span class="oi oi-plus mr-2"></span>
@@ -28,40 +28,38 @@
       <div class="collapse navbar-collapse" id="navbarContenido">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="index.html">
-              <span class="oi oi-home mr-1"></span> Inicio
-            </a>
+            <a class="nav-link" href="index.html"><span class="oi oi-home mr-1"></span> Inicio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="servicios.html">
-              <span class="oi oi-briefcase mr-1"></span> Servicios
-            </a>
+            <a class="nav-link" href="servicios.html"><span class="oi oi-briefcase mr-1"></span> Servicios</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="especialistas.html">
-              <span class="oi oi-people mr-1"></span> Especialistas
-            </a>
+            <a class="nav-link" href="especialistas.html"><span class="oi oi-people mr-1"></span> Especialistas</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="contacto.html">
-              <span class="oi oi-envelope-closed mr-1"></span> Contacto
-            </a>
+            <a class="nav-link" href="contacto.html"><span class="oi oi-envelope-closed mr-1"></span> Contacto</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <!-- JUMBOTRON -->
-  <div class="jumbotron text-center mb-0">
-    <h1 class="display-4">Centro Médico San Agustín</h1>
-    <p class="lead">Cuidamos tu salud con profesionales especializados y tecnología moderna.</p>
-    <p class="lead">
-      <span class="oi oi-map-marker mr-1"></span> Cartavio
-    </p>
-  </div>
+  <!-- BANNER / JUMBOTRON -->
+  <header class="jumbotron jumbotron-fluid banner-principal text-white mb-0">
+    <div class="container text-center">
+      <h1 class="display-4 font-weight-bold">Centro Médico San Agustín</h1>
+      <p class="lead">Promoción especial en chequeos médicos y laboratorio clínico</p>
+      <p class="mb-4">
+        <span class="oi oi-map-marker mr-1"></span> Cartavio - La Libertad
+      </p>
+      <a href="servicios.html" class="btn btn-light btn-lg">
+        <span class="oi oi-eye mr-1"></span> Ver servicios
+      </a>
+    </div>
+  </header>
 
-  <div class="container mt-4">
+  <!-- CONTENIDO -->
+  <main class="container mt-4">
 
     <!-- BREADCRUMB -->
     <nav aria-label="breadcrumb">
@@ -72,54 +70,107 @@
       </ol>
     </nav>
 
-    <div class="row">
-      <div class="col-md-4">
-        <h3><span class="oi oi-person mr-2"></span>Atención Profesional</h3>
-        <p>Contamos con médicos especialistas comprometidos con brindar atención médica de alta calidad.</p>
+    <!-- PRESENTACIÓN -->
+    <section class="mb-5">
+      <div class="row text-center">
+        <div class="col-md-4 mb-4">
+          <div class="info-box h-100">
+            <span class="oi oi-person display-4 mb-3 text-primary"></span>
+            <h3>Atención Profesional</h3>
+            <p>Contamos con médicos especialistas comprometidos con brindar atención médica de alta calidad.</p>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="info-box h-100">
+            <span class="oi oi-monitor display-4 mb-3 text-primary"></span>
+            <h3>Tecnología Moderna</h3>
+            <p>Nuestro centro médico dispone de equipos modernos para diagnósticos precisos y tratamientos efectivos.</p>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="info-box h-100">
+            <span class="oi oi-clock display-4 mb-3 text-primary"></span>
+            <h3>Atención Rápida</h3>
+            <p>Ofrecemos atención eficiente y rápida para que recibas el cuidado médico que necesitas sin largas esperas.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mb-4">
+      <div class="text-center mb-4">
+        <h2>Nuestros Servicios</h2>
+        <p class="text-muted">Conoce las principales atenciones que ofrecemos a nuestros pacientes.</p>
       </div>
 
-      <div class="col-md-4">
-        <h3><span class="oi oi-monitor mr-2"></span>Tecnología Moderna</h3>
-        <p>Nuestro centro médico dispone de equipos modernos para diagnósticos precisos y tratamientos efectivos.</p>
+      <!-- CARDS -->
+      <div class="row">
+
+        <div class="col-md-4 mb-4 d-flex">
+          <div class="card card-servicio w-100">
+            <img src="img/consulta-general.jpg" class="card-img-top" alt="Consulta General">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">
+                <span class="oi oi-person mr-2"></span>Consulta General
+              </h5>
+              <p class="card-text">
+                Atención médica para diagnóstico y tratamiento de enfermedades comunes con orientación profesional.
+              </p>
+            </div>
+            <div class="card-footer bg-white border-top-0">
+              <a href="servicios.html" class="btn btn-primary btn-block">
+                <span class="oi oi-eye mr-1"></span> Ver más
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4 d-flex">
+          <div class="card card-servicio w-100">
+            <img src="img/laboratorio-clinico.jpg" class="card-img-top" alt="Laboratorio Clínico">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">
+                <span class="oi oi-beaker mr-2"></span>Laboratorio Clínico
+              </h5>
+              <p class="card-text">
+                Realizamos análisis clínicos con resultados rápidos, seguros y confiables para apoyar el diagnóstico.
+              </p>
+            </div>
+            <div class="card-footer bg-white border-top-0">
+              <a href="servicios.html" class="btn btn-primary btn-block">
+                <span class="oi oi-eye mr-1"></span> Ver más
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4 d-flex">
+          <div class="card card-servicio w-100">
+            <img src="img/emergencias.jpg" class="card-img-top" alt="Emergencias">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">
+                <span class="oi oi-warning mr-2"></span>Emergencias
+              </h5>
+              <p class="card-text">
+                Servicio de emergencias disponible para atender situaciones urgentes con rapidez y responsabilidad.
+              </p>
+            </div>
+            <div class="card-footer bg-white border-top-0">
+              <a href="servicios.html" class="btn btn-primary btn-block">
+                <span class="oi oi-eye mr-1"></span> Ver más
+              </a>
+            </div>
+          </div>
+        </div>
+
       </div>
+    </section>
 
-      <div class="col-md-4">
-        <h3><span class="oi oi-clock mr-2"></span>Atención Rápida</h3>
-        <p>Ofrecemos atención eficiente y rápida para que recibas el cuidado médico que necesitas sin largas esperas.</p>
-      </div>
-    </div>
+  </main>
 
-    <hr>
-
-    <div class="row">
-      <div class="col-sm-4 mb-3">
-        <h4>Consulta General</h4>
-        <p>Atención médica para diagnóstico y tratamiento de enfermedades comunes.</p>
-        <a class="btn btn-primary" href="servicios.html">
-          <span class="oi oi-eye mr-1"></span> Ver más
-        </a>
-      </div>
-
-      <div class="col-sm-4 mb-3">
-        <h4>Laboratorio Clínico</h4>
-        <p>Realizamos análisis clínicos con resultados rápidos y confiables.</p>
-        <a class="btn btn-primary" href="servicios.html">
-          <span class="oi oi-eye mr-1"></span> Ver más
-        </a>
-      </div>
-
-      <div class="col-sm-4 mb-3">
-        <h4>Emergencias</h4>
-        <p>Servicio de emergencias disponible para atender situaciones urgentes.</p>
-        <a class="btn btn-primary" href="servicios.html">
-          <span class="oi oi-eye mr-1"></span> Ver más
-        </a>
-      </div>
-    </div>
-
-  </div>
-
-  <footer class="bg-dark text-white mt-4 p-4 text-center">
+  <footer class="bg-dark text-white mt-4 py-4 text-center">
     <div class="container">
       <p class="mb-1">© 2026 Centro Médico San Agustín</p>
       <p class="mb-1"><span class="oi oi-map-marker mr-1"></span> Dirección: Cartavio - La Libertad</p>

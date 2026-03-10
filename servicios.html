@@ -12,7 +12,7 @@
 </head>
 <body>
 
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top shadow-sm">
     <div class="container">
       <a class="navbar-brand" href="index.html">
         <span class="oi oi-plus mr-2"></span>
@@ -43,7 +43,7 @@
     </div>
   </nav>
 
-  <div class="container mt-4">
+  <main class="container mt-4">
     <h1 class="mb-4"><span class="oi oi-briefcase mr-2"></span>Nuestros Servicios</h1>
 
     <nav aria-label="breadcrumb">
@@ -55,42 +55,80 @@
       </ol>
     </nav>
 
-    <p>
-      En el Centro Médico San Agustín ofrecemos atención integral para nuestros pacientes, priorizando
-      la calidad, la rapidez y la confianza en cada servicio.
+    <p class="mb-4">
+      A continuación se muestra una tabla comparativa de algunos de los servicios más solicitados en nuestro centro médico.
     </p>
 
-    <div class="row mt-4">
+    <!-- TABLA RESPONSIVE -->
+    <div class="table-responsive tabla-servicios">
+      <table class="table table-bordered table-hover table-striped text-center align-middle">
+        <thead class="thead-primary">
+          <tr>
+            <th>Servicio</th>
+            <th>Horario</th>
+            <th>Atención inmediata</th>
+            <th>Especialista</th>
+            <th>Costo accesible</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="oi oi-person mr-1 text-primary"></span> Consulta General</td>
+            <td>Lunes a sábado</td>
+            <td><span class="oi oi-check text-success"></span></td>
+            <td><span class="oi oi-check text-success"></span></td>
+            <td><span class="oi oi-check text-success"></span></td>
+          </tr>
+          <tr>
+            <td><span class="oi oi-beaker mr-1 text-primary"></span> Laboratorio Clínico</td>
+            <td>Lunes a viernes</td>
+            <td><span class="oi oi-x text-danger"></span></td>
+            <td><span class="oi oi-check text-success"></span></td>
+            <td><span class="oi oi-check text-success"></span></td>
+          </tr>
+          <tr>
+            <td><span class="oi oi-warning mr-1 text-primary"></span> Emergencias</td>
+            <td>24 horas</td>
+            <td><span class="oi oi-check text-success"></span></td>
+            <td><span class="oi oi-check text-success"></span></td>
+            <td><span class="oi oi-x text-danger"></span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="row mt-5">
       <div class="col-md-4 mb-3">
-        <div class="card">
+        <div class="card h-100">
           <div class="card-body">
             <h5><span class="oi oi-person mr-1"></span>Consulta General</h5>
-            <p>Evaluación médica inicial y orientación profesional para el tratamiento adecuado.</p>
+            <p>Evaluación médica inicial, diagnóstico básico y orientación para tratamiento.</p>
           </div>
         </div>
       </div>
 
       <div class="col-md-4 mb-3">
-        <div class="card">
+        <div class="card h-100">
           <div class="card-body">
             <h5><span class="oi oi-beaker mr-1"></span>Laboratorio Clínico</h5>
-            <p>Pruebas y análisis clínicos con resultados confiables y oportunos.</p>
+            <p>Pruebas clínicas, análisis y soporte en diagnósticos médicos.</p>
           </div>
         </div>
       </div>
 
       <div class="col-md-4 mb-3">
-        <div class="card">
+        <div class="card h-100">
           <div class="card-body">
             <h5><span class="oi oi-warning mr-1"></span>Emergencias</h5>
-            <p>Atención inmediata para situaciones urgentes que requieren rápida intervención.</p>
+            <p>Atención rápida ante casos urgentes que requieren intervención inmediata.</p>
           </div>
         </div>
       </div>
-    </div>
-  </div>
+    </div>  
 
-  <footer class="bg-dark text-white mt-4 p-4 text-center">
+  </main>
+
+  <footer class="bg-dark text-white mt-4 py-4 text-center">
     <div class="container">
       <p class="mb-1">© 2026 Centro Médico San Agustín</p>
       <p class="mb-1"><span class="oi oi-map-marker mr-1"></span> Dirección: Cartavio - La Libertad</p>
