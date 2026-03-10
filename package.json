@@ -1,0 +1,20 @@
+{
+  "name": "san-agustin",
+  "version": "1.0.0",
+  "description": "Proyecto web centro medico San Agustin ",
+  "homepage": "https://bitbucket.org/proyectoscruz21/san-agustin#readme",
+  "bugs": {
+    "url": "https://bitbucket.org/proyectoscruz21/san-agustin/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://proyectoscruz21-admin@bitbucket.org/proyectoscruz21/san-agustin.git"
+  },
+  "license": "ISC",
+  "author": "Steven Cruz",
+  "type": "commonjs",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
