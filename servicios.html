@@ -27,27 +27,44 @@
       <div class="collapse navbar-collapse" id="navbarContenido">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="index.html"><span class="oi oi-home mr-1"></span> Inicio</a>
+            <a class="nav-link" href="index.html">
+              <span class="oi oi-home mr-1"></span> Inicio
+            </a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href="servicios.html"><span class="oi oi-briefcase mr-1"></span> Servicios</a>
+            <a class="nav-link" href="servicios.html">
+              <span class="oi oi-briefcase mr-1"></span> Servicios
+            </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="especialistas.html"><span class="oi oi-people mr-1"></span> Especialistas</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contacto.html"><span class="oi oi-envelope-closed mr-1"></span> Contacto</a>
+            <a class="nav-link" href="contacto.html">
+              <span class="oi oi-envelope-closed mr-1"></span> Contacto
+            </a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
 
+  <!-- ALERTA -->
+  <div class="container mt-alert">
+    <div class="alert alert-warning alert-dismissible fade show shadow-sm" role="alert">
+      <strong><span class="oi oi-warning mr-1"></span> Aviso:</strong>
+      El servicio de emergencias presenta alta demanda en horario nocturno.
+      <button type="button" class="close" data-dismiss="alert" aria-label="Cerrar">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+  </div>
+
   <main class="container mt-4">
-    <h1 class="mb-4"><span class="oi oi-briefcase mr-2"></span>Nuestros Servicios</h1>
+
+    <h1 class="mb-4">
+      <span class="oi oi-briefcase mr-2"></span>Nuestros Servicios
+    </h1>
 
     <nav aria-label="breadcrumb">
-      <ol class="breadcrumb">
+      <ol class="breadcrumb shadow-sm">
         <li class="breadcrumb-item">
           <a href="index.html"><span class="oi oi-home mr-1"></span>Inicio</a>
         </li>
@@ -56,75 +73,130 @@
     </nav>
 
     <p class="mb-4">
-      A continuación se muestra una tabla comparativa de algunos de los servicios más solicitados en nuestro centro médico.
+      Aquí puedes visualizar de forma rápida el estado actual de nuestros principales servicios médicos.
     </p>
 
-    <!-- TABLA RESPONSIVE -->
-    <div class="table-responsive tabla-servicios">
-      <table class="table table-bordered table-hover table-striped text-center align-middle">
+    <!-- TABLA -->
+    <div class="table-responsive tabla-servicios mb-5">
+      <table class="table table-bordered table-hover table-striped text-center align-middle mb-0">
         <thead class="thead-primary">
           <tr>
             <th>Servicio</th>
             <th>Horario</th>
-            <th>Atención inmediata</th>
-            <th>Especialista</th>
-            <th>Costo accesible</th>
+            <th>Estado</th>
+            <th>Disponibilidad</th>
+            <th>Turnos</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td><span class="oi oi-person mr-1 text-primary"></span> Consulta General</td>
             <td>Lunes a sábado</td>
+            <td><span class="badge badge-success">Disponible</span></td>
             <td><span class="oi oi-check text-success"></span></td>
-            <td><span class="oi oi-check text-success"></span></td>
-            <td><span class="oi oi-check text-success"></span></td>
+            <td><span class="badge badge-primary badge-pill">12</span></td>
           </tr>
           <tr>
             <td><span class="oi oi-beaker mr-1 text-primary"></span> Laboratorio Clínico</td>
             <td>Lunes a viernes</td>
-            <td><span class="oi oi-x text-danger"></span></td>
+            <td><span class="badge badge-info">Nuevo</span></td>
             <td><span class="oi oi-check text-success"></span></td>
-            <td><span class="oi oi-check text-success"></span></td>
+            <td><span class="badge badge-primary badge-pill">8</span></td>
           </tr>
           <tr>
             <td><span class="oi oi-warning mr-1 text-primary"></span> Emergencias</td>
             <td>24 horas</td>
+            <td><span class="badge badge-warning">Alta demanda</span></td>
             <td><span class="oi oi-check text-success"></span></td>
-            <td><span class="oi oi-check text-success"></span></td>
-            <td><span class="oi oi-x text-danger"></span></td>
+            <td><span class="badge badge-danger badge-pill">3</span></td>
           </tr>
         </tbody>
       </table>
     </div>
 
-    <div class="row mt-5">
-      <div class="col-md-4 mb-3">
-        <div class="card h-100">
-          <div class="card-body">
-            <h5><span class="oi oi-person mr-1"></span>Consulta General</h5>
-            <p>Evaluación médica inicial, diagnóstico básico y orientación para tratamiento.</p>
-          </div>
-        </div>
-      </div>
+    <!-- BARRAS DE PROGRESO -->
+    <section class="mb-5">
+      <div class="card shadow-sm border-0">
+        <div class="card-body">
+          <h4 class="mb-4">
+            <span class="oi oi-pulse mr-2 text-primary"></span>
+            Nivel de atención actual
+          </h4>
 
-      <div class="col-md-4 mb-3">
-        <div class="card h-100">
-          <div class="card-body">
-            <h5><span class="oi oi-beaker mr-1"></span>Laboratorio Clínico</h5>
-            <p>Pruebas clínicas, análisis y soporte en diagnósticos médicos.</p>
+          <div class="mb-4">
+            <div class="d-flex justify-content-between">
+              <span>Consulta General</span>
+              <span>70%</span>
+            </div>
+            <div class="progress">
+              <div class="progress-bar bg-success" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                70%
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
 
-      <div class="col-md-4 mb-3">
-        <div class="card h-100">
-          <div class="card-body">
-            <h5><span class="oi oi-warning mr-1"></span>Emergencias</h5>
-            <p>Atención rápida ante casos urgentes que requieren intervención inmediata.</p>
+          <div class="mb-4">
+            <div class="d-flex justify-content-between">
+              <span>Laboratorio Clínico</span>
+              <span>55%</span>
+            </div>
+            <div class="progress">
+              <div class="progress-bar bg-info" role="progressbar" style="width: 55%;" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">
+                55%
+              </div>
+            </div>
+          </div>
+
+          <div class="mb-1">
+            <div class="d-flex justify-content-between">
+              <span>Emergencias</span>
+              <span>90%</span>
+            </div>
+            <div class="progress">
+              <div class="progress-bar bg-warning" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                90%
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CARDS -->
+    <section class="mb-5">
+      <div class="row">
+        <div class="col-md-4 mb-4 d-flex">
+          <div class="card card-servicio w-100">
+            <img src="img/consulta-general.jpg" class="card-img-top" alt="Consulta General">
+            <div class="card-body">
+              <h5 class="card-title">Consulta General</h5>
+              <p class="card-text">Evaluación médica inicial y orientación profesional para el tratamiento adecuado.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4 d-flex">
+          <div class="card card-servicio w-100">
+            <img src="img/laboratorio-clinico.jpg" class="card-img-top" alt="Laboratorio Clínico">
+            <div class="card-body">
+              <h5 class="card-title">Laboratorio Clínico</h5>
+              <p class="card-text">Pruebas y análisis clínicos con resultados oportunos y confiables.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4 d-flex">
+          <div class="card card-servicio w-100">
+            <img src="img/emergencias.jpg" class="card-img-top" alt="Emergencias">
+            <div class="card-body">
+              <h5 class="card-title">Emergencias</h5>
+              <p class="card-text">Atención inmediata ante casos urgentes que requieren rápida intervención.</p>
+            </div>
           </div>
         </div>
       </div>
-    </div>  
+    </section>
 
   </main>
 
