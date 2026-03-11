@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <title>Farmacia - Centro Médico San Agustín</title>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <span class="oi oi-plus mr-2"></span>
+        Centro Médico San Agustín
+      </a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContenido"
+        aria-controls="navbarContenido" aria-expanded="false" aria-label="Menú de navegación">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarContenido">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">
+              <span class="oi oi-home mr-1"></span> Inicio
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="servicios.html">
+              <span class="oi oi-briefcase mr-1"></span> Servicios
+            </a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="farmacia.html">
+              <span class="oi oi-cart mr-1"></span> Farmacia
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.html">
+              <span class="oi oi-envelope-closed mr-1"></span> Contacto
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container mt-4">
+    <h1 class="mb-4">
+      <span class="oi oi-cart mr-2"></span>Farmacia
+    </h1>
+
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb shadow-sm">
+        <li class="breadcrumb-item">
+          <a href="index.html"><span class="oi oi-home mr-1"></span>Inicio</a>
+        </li>
+        <li class="breadcrumb-item active" aria-current="page">Farmacia</li>
+      </ol>
+    </nav>
+
+    <p class="mb-4">
+      En esta sección puedes visualizar productos, medios de pago e información para la compra en la farmacia del centro médico.
+    </p>
+
+    <ul class="nav nav-tabs flex-column flex-md-row mb-4" id="farmaciaTabs" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link active" id="compara-tab" data-toggle="tab" href="#compara" role="tab" aria-controls="compara" aria-selected="true">
+          <span class="oi oi-list-rich mr-1"></span> Comparativa
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="pagos-tab" data-toggle="tab" href="#pagos" role="tab" aria-controls="pagos" aria-selected="false">
+          <span class="oi oi-credit-card mr-1"></span> Opciones de pago
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="compra-tab" data-toggle="tab" href="#compra" role="tab" aria-controls="compra" aria-selected="false">
+          <span class="oi oi-info mr-1"></span> Información de compra
+        </a>
+      </li>
+    </ul>
+
+    <div class="tab-content" id="farmaciaTabsContent">
+
+      <div class="tab-pane fade show active" id="compara" role="tabpanel" aria-labelledby="compara-tab">
+        <div class="card shadow-sm border-0 mb-4">
+          <div class="card-body">
+            <h4 class="mb-4">Tabla comparativa de productos</h4>
+
+            <div class="table-responsive tabla-servicios">
+              <table class="table table-bordered table-hover table-striped text-center align-middle mb-0">
+                <thead class="thead-primary">
+                  <tr>
+                    <th>Producto</th>
+                    <th>Presentación</th>
+                    <th>Stock</th>
+                    <th>Precio</th>
+                    <th>Disponible</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="oi oi-droplet mr-1 text-primary"></span> Paracetamol</td>
+                    <td>Caja x 20 tabletas</td>
+                    <td>35 unidades</td>
+                    <td>S/ 8.00</td>
+                    <td><span class="oi oi-check text-success"></span></td>
+                  </tr>
+                  <tr>
+                    <td><span class="oi oi-heart mr-1 text-danger"></span> Vitamina C</td>
+                    <td>Frasco x 100 tabletas</td>
+                    <td>20 unidades</td>
+                    <td>S/ 18.00</td>
+                    <td><span class="oi oi-check text-success"></span></td>
+                  </tr>
+                  <tr>
+                    <td><span class="oi oi-medical-cross mr-1 text-primary"></span> Alcohol medicinal</td>
+                    <td>Botella 250 ml</td>
+                    <td>8 unidades</td>
+                    <td>S/ 6.50</td>
+                    <td><span class="oi oi-check text-success"></span></td>
+                  </tr>
+                  <tr>
+                    <td><span class="oi oi-warning mr-1 text-warning"></span> Termómetro digital</td>
+                    <td>Unidad</td>
+                    <td>3 unidades</td>
+                    <td>S/ 25.00</td>
+                    <td><span class="oi oi-x text-danger"></span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-pane fade" id="pagos" role="tabpanel" aria-labelledby="pagos-tab">
+        <div class="card shadow-sm border-0 mb-4">
+          <div class="card-body">
+            <h4 class="mb-4">Opciones de pago</h4>
+
+            <div class="row">
+              <div class="col-md-4 mb-3">
+                <div class="info-box h-100 text-center">
+                  <span class="oi oi-dollar display-4 mb-3 text-success"></span>
+                  <h5>Efectivo</h5>
+                  <p>Puedes pagar en caja al momento de recoger tu producto.</p>
+                </div>
+              </div>
+
+              <div class="col-md-4 mb-3">
+                <div class="info-box h-100 text-center">
+                  <span class="oi oi-credit-card display-4 mb-3 text-primary"></span>
+                  <h5>Tarjeta</h5>
+                  <p>Aceptamos tarjetas de débito y crédito para una compra más cómoda.</p>
+                </div>
+              </div>
+
+              <div class="col-md-4 mb-3">
+                <div class="info-box h-100 text-center">
+                  <span class="oi oi-phone display-4 mb-3 text-info"></span>
+                  <h5>Yape / Plin</h5>
+                  <p>También puedes pagar desde tu celular con aplicativos móviles.</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-pane fade" id="compra" role="tabpanel" aria-labelledby="compra-tab">
+        <div class="card shadow-sm border-0 mb-4">
+          <div class="card-body">
+            <h4 class="mb-4">Información para la compra</h4>
+
+            <div class="alert alert-info" role="alert">
+              <span class="oi oi-info mr-1"></span>
+              Antes de comprar, verifica la disponibilidad del producto y consulta si requiere receta médica.
+            </div>
+
+            <ul class="list-group">
+              <li class="list-group-item">
+                <span class="oi oi-check mr-2 text-success"></span>
+                Consulta disponibilidad del producto.
+              </li>
+              <li class="list-group-item">
+                <span class="oi oi-check mr-2 text-success"></span>
+                Presenta receta si el medicamento lo requiere.
+              </li>
+              <li class="list-group-item">
+                <span class="oi oi-check mr-2 text-success"></span>
+                Elige el método de pago más conveniente.
+              </li>
+              <li class="list-group-item">
+                <span class="oi oi-check mr-2 text-success"></span>
+                Recoge tu producto en la farmacia del centro médico.
+              </li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="bg-dark text-white py-4 text-center">
+    <div class="container">
+      <p class="mb-1">© 2026 Centro Médico San Agustín</p>
+      <p class="mb-1"><span class="oi oi-map-marker mr-1"></span> Dirección: Cartavio - La Libertad</p>
+      <p class="mb-0"><span class="oi oi-phone mr-1"></span> Teléfono: +51 999 999 999</p>
+    </div>
+  </footer>
+
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+  <script>
+    $('#farmaciaTabs a').on('click', function (e) {
+      e.preventDefault();
+      $(this).tab('show');
+    });
+
+    console.log("jQuery:", typeof $);
+    console.log("Bootstrap tab:", $.fn && $.fn.tab ? typeof $.fn.tab : "undefined");
+  </script>
+</body>
+</html>

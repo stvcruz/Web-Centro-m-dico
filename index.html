@@ -12,7 +12,6 @@
 </head>
 <body>
 
-  <!-- NAVBAR -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top shadow-sm">
     <div class="container">
       <a class="navbar-brand" href="index.html">
@@ -38,6 +37,11 @@
             </a>
           </li>
           <li class="nav-item">
+            <a class="nav-link" href="farmacia.html">
+              <span class="oi oi-cart mr-1"></span> Farmacia
+            </a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="contacto.html">
               <span class="oi oi-envelope-closed mr-1"></span> Contacto
             </a>
@@ -47,22 +51,10 @@
     </div>
   </nav>
 
-  <!-- ALERTA PRINCIPAL -->
-  <div class="container mt-alert">
-    <div class="alert alert-success alert-dismissible fade show shadow-sm" role="alert">
-      <strong><span class="oi oi-check mr-1"></span> Campaña activa:</strong>
-      Chequeo general con descuento durante este mes.
-      <button type="button" class="close" data-dismiss="alert" aria-label="Cerrar">
-        <span aria-hidden="true">&times;</span>
-      </button>
-    </div>
-  </div>
-
-  <!-- BANNER -->
   <header class="jumbotron jumbotron-fluid banner-principal text-white mb-0">
     <div class="container text-center">
       <h1 class="display-4 font-weight-bold">Centro Médico San Agustín</h1>
-      <p class="lead mb-2">Cuidamos tu salud con profesionales especializados y atención de calidad</p>
+      <p class="lead mb-3">Atención médica de calidad, rápida y confiable para toda la familia</p>
       <p class="mb-4">
         <span class="oi oi-map-marker mr-1"></span> Cartavio - La Libertad
       </p>
@@ -72,10 +64,8 @@
     </div>
   </header>
 
-  <!-- CONTENIDO -->
   <main class="container mt-4">
 
-    <!-- BREADCRUMB -->
     <nav aria-label="breadcrumb">
       <ol class="breadcrumb shadow-sm">
         <li class="breadcrumb-item active" aria-current="page">
@@ -84,7 +74,6 @@
       </ol>
     </nav>
 
-    <!-- PRESENTACIÓN -->
     <section class="mb-5">
       <div class="row text-center">
         <div class="col-md-4 mb-4">
@@ -99,7 +88,7 @@
           <div class="info-box h-100">
             <span class="oi oi-monitor display-4 mb-3 text-primary"></span>
             <h3>Tecnología Moderna</h3>
-            <p>Nuestro centro médico dispone de equipos modernos para diagnósticos precisos y tratamientos efectivos.</p>
+            <p>Disponemos de equipos modernos para diagnósticos precisos y tratamientos efectivos.</p>
           </div>
         </div>
 
@@ -107,17 +96,16 @@
           <div class="info-box h-100">
             <span class="oi oi-clock display-4 mb-3 text-primary"></span>
             <h3>Atención Rápida</h3>
-            <p>Ofrecemos atención eficiente y rápida para que recibas el cuidado médico que necesitas sin largas esperas.</p>
+            <p>Ofrecemos atención eficiente para que recibas el cuidado que necesitas sin largas esperas.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- CARDS DE SERVICIOS -->
     <section class="mb-5">
       <div class="text-center mb-4">
         <h2>Nuestros Servicios</h2>
-        <p class="text-muted">Atenciones médicas principales disponibles para nuestros pacientes</p>
+        <p class="text-muted">Conoce las principales atenciones que ofrecemos.</p>
       </div>
 
       <div class="row">
@@ -128,10 +116,9 @@
             <div class="card-body d-flex flex-column">
               <h5 class="card-title">
                 <span class="oi oi-person mr-2"></span>Consulta General
-                <span class="badge badge-success ml-2">Disponible</span>
               </h5>
               <p class="card-text">
-                Atención médica para diagnóstico, evaluación inicial y tratamiento de enfermedades comunes.
+                Atención médica para evaluación inicial, diagnóstico y tratamiento de enfermedades comunes.
               </p>
             </div>
             <div class="card-footer bg-white border-top-0">
@@ -148,10 +135,9 @@
             <div class="card-body d-flex flex-column">
               <h5 class="card-title">
                 <span class="oi oi-beaker mr-2"></span>Laboratorio Clínico
-                <span class="badge badge-info ml-2">Nuevo</span>
               </h5>
               <p class="card-text">
-                Realizamos análisis clínicos con resultados rápidos y confiables para apoyar un diagnóstico preciso.
+                Análisis clínicos con resultados rápidos y confiables para apoyar un diagnóstico preciso.
               </p>
             </div>
             <div class="card-footer bg-white border-top-0">
@@ -168,10 +154,9 @@
             <div class="card-body d-flex flex-column">
               <h5 class="card-title">
                 <span class="oi oi-warning mr-2"></span>Emergencias
-                <span class="badge badge-warning ml-2">Alta demanda</span>
               </h5>
               <p class="card-text">
-                Servicio de atención inmediata para situaciones urgentes que requieren intervención rápida.
+                Servicio de atención inmediata para situaciones urgentes que requieren rápida intervención.
               </p>
             </div>
             <div class="card-footer bg-white border-top-0">
@@ -185,80 +170,9 @@
       </div>
     </section>
 
-    <!-- RESUMEN DE DISPONIBILIDAD -->
-    <section class="mb-5">
-      <div class="row">
-        <div class="col-lg-8">
-          <div class="card shadow-sm border-0">
-            <div class="card-body">
-              <h4 class="mb-4">
-                <span class="oi oi-pulse mr-2 text-primary"></span>
-                Disponibilidad de atención
-              </h4>
-
-              <div class="mb-3">
-                <div class="d-flex justify-content-between">
-                  <span>Consulta General</span>
-                  <span>70%</span>
-                </div>
-                <div class="progress">
-                  <div class="progress-bar bg-success" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
-                    70%
-                  </div>
-                </div>
-              </div>
-
-              <div class="mb-3">
-                <div class="d-flex justify-content-between">
-                  <span>Laboratorio Clínico</span>
-                  <span>55%</span>
-                </div>
-                <div class="progress">
-                  <div class="progress-bar bg-info" role="progressbar" style="width: 55%;" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">
-                    55%
-                  </div>
-                </div>
-              </div>
-
-              <div class="mb-1">
-                <div class="d-flex justify-content-between">
-                  <span>Emergencias</span>
-                  <span>90%</span>
-                </div>
-                <div class="progress">
-                  <div class="progress-bar bg-warning" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
-                    90%
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 mt-4 mt-lg-0">
-          <div class="card shadow-sm border-0 h-100">
-            <div class="card-body">
-              <h5 class="mb-3">
-                <span class="oi oi-bell mr-2 text-primary"></span>Notificaciones
-              </h5>
-              <button type="button" class="btn btn-outline-primary mb-3">
-                Recordatorios
-                <span class="badge badge-primary badge-pill">4</span>
-              </button>
-
-              <div class="alert alert-info mb-0" role="alert">
-                <strong>Horario especial:</strong> este sábado atendemos hasta las 6:00 p.m.
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
   </main>
 
-  <footer class="bg-dark text-white mt-4 py-4 text-center">
+  <footer class="bg-dark text-white py-4 text-center">
     <div class="container">
       <p class="mb-1">© 2026 Centro Médico San Agustín</p>
       <p class="mb-1"><span class="oi oi-map-marker mr-1"></span> Dirección: Cartavio - La Libertad</p>

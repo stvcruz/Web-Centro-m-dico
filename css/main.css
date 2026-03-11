@@ -3,10 +3,6 @@ body {
   background-color: #f8f9fa;
 }
 
-.mt-alert {
-  margin-top: 90px;
-}
-
 .navbar {
   padding: 0.9rem 1rem;
 }
@@ -78,22 +74,26 @@ body {
   vertical-align: middle !important;
 }
 
-.progress {
-  height: 24px;
-  border-radius: 50px;
-  overflow: hidden;
-  background-color: #e9ecef;
+.card {
+  border-radius: 14px;
 }
 
-.progress-bar {
-  font-weight: 600;
-}
-
-.alert {
+.form-control,
+.btn {
   border-radius: 10px;
 }
 
-.card {
+.nav-tabs .nav-link,
+.nav-pills .nav-link {
+  font-weight: 600;
+  border-radius: 10px 10px 0 0;
+}
+
+.nav-pills .nav-link {
+  border-radius: 10px;
+}
+
+.tab-content .card {
   border-radius: 14px;
 }
 
@@ -119,7 +119,11 @@ footer {
     height: 180px;
   }
 
-  .mt-alert {
-    margin-top: 85px;
+  .nav-tabs .nav-link,
+  .nav-pills .nav-link {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0.35rem;
+    border-radius: 10px;
   }
 }
