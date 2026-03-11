@@ -127,3 +127,16 @@ footer {
     border-radius: 10px;
   }
 }
+#accordionCompra .card-header {
+  background-color: #f8f9fa;
+}
+
+#accordionCompra .btn-link {
+  color: #212529;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+#accordionCompra .btn-link:hover {
+  text-decoration: none;
+}

@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
   <link rel="stylesheet" href="css/main.css">
 
-  <title>Farmacia - Centro Médico San Agustín</title>
+  <title>Centro Médico San Agustín - Inicio</title>
 </head>
 <body>
 
@@ -19,14 +19,14 @@
         Centro Médico San Agustín
       </a>
 
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContenido"
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContenido"
         aria-controls="navbarContenido" aria-expanded="false" aria-label="Menú de navegación">
         <span class="navbar-toggler-icon"></span>
       </button>
 
       <div class="collapse navbar-collapse" id="navbarContenido">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
+          <li class="nav-item active">
             <a class="nav-link" href="index.html">
               <span class="oi oi-home mr-1"></span> Inicio
             </a>
@@ -36,7 +36,7 @@
               <span class="oi oi-briefcase mr-1"></span> Servicios
             </a>
           </li>
-          <li class="nav-item active">
+          <li class="nav-item">
             <a class="nav-link" href="farmacia.html">
               <span class="oi oi-cart mr-1"></span> Farmacia
             </a>
@@ -69,26 +69,28 @@
       En esta sección puedes visualizar productos, medios de pago e información para la compra en la farmacia del centro médico.
     </p>
 
+    <!-- TABS -->
     <ul class="nav nav-tabs flex-column flex-md-row mb-4" id="farmaciaTabs" role="tablist">
       <li class="nav-item">
-        <a class="nav-link active" id="compara-tab" data-toggle="tab" href="#compara" role="tab" aria-controls="compara" aria-selected="true">
-          <span class="oi oi-list-rich mr-1"></span> Comparativa
+        <a class="nav-link active" id="compara-tab" data-bs-toggle="tab" href="#compara" role="tab" aria-controls="compara" aria-selected="true">
+          <span class="oi oi-list-rich mr-1"></span> Compara
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" id="pagos-tab" data-toggle="tab" href="#pagos" role="tab" aria-controls="pagos" aria-selected="false">
-          <span class="oi oi-credit-card mr-1"></span> Opciones de pago
+        <a class="nav-link" id="tarjetas-tab" data-bs-toggle="tab" href="#tarjetas" role="tab" aria-controls="tarjetas" aria-selected="false">
+          <span class="oi oi-credit-card mr-1"></span> Tarjetas
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" id="compra-tab" data-toggle="tab" href="#compra" role="tab" aria-controls="compra" aria-selected="false">
-          <span class="oi oi-info mr-1"></span> Información de compra
+        <a class="nav-link" id="comentarios-tab" data-bs-toggle="tab" href="#comentarios" role="tab" aria-controls="comentarios" aria-selected="false">
+          <span class="oi oi-comment-square mr-1"></span> Comentarios
         </a>
       </li>
     </ul>
 
     <div class="tab-content" id="farmaciaTabsContent">
 
+      <!-- TAB COMPARA -->
       <div class="tab-pane fade show active" id="compara" role="tabpanel" aria-labelledby="compara-tab">
         <div class="card shadow-sm border-0 mb-4">
           <div class="card-body">
@@ -137,37 +139,18 @@
                 </tbody>
               </table>
             </div>
-          </div>
-        </div>
-      </div>
 
-      <div class="tab-pane fade" id="pagos" role="tabpanel" aria-labelledby="pagos-tab">
-        <div class="card shadow-sm border-0 mb-4">
-          <div class="card-body">
-            <h4 class="mb-4">Opciones de pago</h4>
+            <!-- COLLAPSE SIMPLE -->
+            <div class="mt-4">
+              <p>
+                <a class="btn btn-outline-primary" data-bs-toggle="collapse" href="#collapseRecomendacion" role="button" aria-expanded="false" aria-controls="collapseRecomendacion">
+                  Ver recomendación de compra
+                </a>
+              </p>
 
-            <div class="row">
-              <div class="col-md-4 mb-3">
-                <div class="info-box h-100 text-center">
-                  <span class="oi oi-dollar display-4 mb-3 text-success"></span>
-                  <h5>Efectivo</h5>
-                  <p>Puedes pagar en caja al momento de recoger tu producto.</p>
-                </div>
-              </div>
-
-              <div class="col-md-4 mb-3">
-                <div class="info-box h-100 text-center">
-                  <span class="oi oi-credit-card display-4 mb-3 text-primary"></span>
-                  <h5>Tarjeta</h5>
-                  <p>Aceptamos tarjetas de débito y crédito para una compra más cómoda.</p>
-                </div>
-              </div>
-
-              <div class="col-md-4 mb-3">
-                <div class="info-box h-100 text-center">
-                  <span class="oi oi-phone display-4 mb-3 text-info"></span>
-                  <h5>Yape / Plin</h5>
-                  <p>También puedes pagar desde tu celular con aplicativos móviles.</p>
+              <div class="collapse" id="collapseRecomendacion">
+                <div class="card card-body">
+                  Se recomienda consultar al personal de farmacia antes de adquirir medicamentos o suplementos, especialmente si el paciente ya recibe tratamiento médico.
                 </div>
               </div>
             </div>
@@ -176,34 +159,148 @@
         </div>
       </div>
 
-      <div class="tab-pane fade" id="compra" role="tabpanel" aria-labelledby="compra-tab">
+      <!-- TAB TARJETAS -->
+      <div class="tab-pane fade" id="tarjetas" role="tabpanel" aria-labelledby="tarjetas-tab">
         <div class="card shadow-sm border-0 mb-4">
           <div class="card-body">
-            <h4 class="mb-4">Información para la compra</h4>
+            <h4 class="mb-4">Opciones de pago con collapse y accordion</h4>
+
+            <!-- MULTI COLLAPSE -->
+            <p>
+              <a class="btn btn-primary mr-2 mb-2" data-bs-toggle="collapse" href="#multiCollapseTarjeta" role="button" aria-expanded="false" aria-controls="multiCollapseTarjeta">
+                Ver tarjeta
+              </a>
+
+              <button class="btn btn-info mr-2 mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseDigital" aria-expanded="false" aria-controls="multiCollapseDigital">
+                Ver pago digital
+              </button>
+
+              <button class="btn btn-secondary mb-2" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseTarjeta multiCollapseDigital">
+                Ver ambos
+              </button>
+            </p>
+
+            <div class="row mb-4">
+              <div class="col-md-6">
+                <div class="collapse multi-collapse" id="multiCollapseTarjeta">
+                  <div class="card card-body">
+                    Aceptamos tarjetas Visa y Mastercard. Puedes pagar con débito o crédito en caja.
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="collapse multi-collapse" id="multiCollapseDigital">
+                  <div class="card card-body">
+                    También puedes pagar por Yape o Plin solicitando el número o código QR al personal.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ACCORDION -->
+            <div id="accordionTarjetas">
+
+              <div class="card">
+                <div class="card-header" id="headingOne">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBasica" aria-expanded="true" aria-controls="collapseBasica">
+                      Tarjeta Básica
+                    </button>
+                  </h5>
+                </div>
+
+                <div id="collapseBasica" class="collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionTarjetas">
+                  <div class="card-body">
+                    Puedes pagar hasta en 3 cuotas sin interés en compras seleccionadas.
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header" id="headingTwo">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseVIP" aria-expanded="false" aria-controls="collapseVIP">
+                      Tarjeta VIP
+                    </button>
+                  </h5>
+                </div>
+
+                <div id="collapseVIP" class="collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionTarjetas">
+                  <div class="card-body">
+                    Puedes pagar hasta en 6 cuotas sin interés y acceder a promociones especiales en farmacia.
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header" id="headingThree">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBlack" aria-expanded="false" aria-controls="collapseBlack">
+                      Tarjeta Black
+                    </button>
+                  </h5>
+                </div>
+
+                <div id="collapseBlack" class="collapse" aria-labelledby="headingThree" data-bs-parent="#accordionTarjetas">
+                  <div class="card-body">
+                    Puedes acceder a más cuotas, prioridad en promociones y campañas especiales del centro médico.
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- TAB COMENTARIOS -->
+      <div class="tab-pane fade" id="comentarios" role="tabpanel" aria-labelledby="comentarios-tab">
+        <div class="card shadow-sm border-0 mb-4">
+          <div class="card-body">
+            <h4 class="mb-4">Comentarios y recomendaciones</h4>
 
             <div class="alert alert-info" role="alert">
               <span class="oi oi-info mr-1"></span>
-              Antes de comprar, verifica la disponibilidad del producto y consulta si requiere receta médica.
+              Consulta siempre al personal si tienes dudas sobre dosis, recetas o disponibilidad.
             </div>
 
-            <ul class="list-group">
-              <li class="list-group-item">
-                <span class="oi oi-check mr-2 text-success"></span>
-                Consulta disponibilidad del producto.
-              </li>
-              <li class="list-group-item">
-                <span class="oi oi-check mr-2 text-success"></span>
-                Presenta receta si el medicamento lo requiere.
-              </li>
-              <li class="list-group-item">
-                <span class="oi oi-check mr-2 text-success"></span>
-                Elige el método de pago más conveniente.
-              </li>
-              <li class="list-group-item">
-                <span class="oi oi-check mr-2 text-success"></span>
-                Recoge tu producto en la farmacia del centro médico.
-              </li>
-            </ul>
+            <div id="accordionComentarios">
+
+              <div class="card">
+                <div class="card-header" id="headingComentarioOne">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#collapseComentarioOne" aria-expanded="true" aria-controls="collapseComentarioOne">
+                      ¿Cómo saber si un producto necesita receta?
+                    </button>
+                  </h5>
+                </div>
+
+                <div id="collapseComentarioOne" class="collapse show" aria-labelledby="headingComentarioOne" data-bs-parent="#accordionComentarios">
+                  <div class="card-body">
+                    Si se trata de antibióticos o medicamentos controlados, consulta primero con el personal de farmacia o con tu médico.
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header" id="headingComentarioTwo">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseComentarioTwo" aria-expanded="false" aria-controls="collapseComentarioTwo">
+                      ¿Puedo consultar stock antes de ir?
+                    </button>
+                  </h5>
+                </div>
+
+                <div id="collapseComentarioTwo" class="collapse" aria-labelledby="headingComentarioTwo" data-bs-parent="#accordionComentarios">
+                  <div class="card-body">
+                    Sí, puedes escribir desde la sección de contacto para consultar disponibilidad antes de acercarte al centro médico.
+                  </div>
+                </div>
+              </div>
+
+            </div>
 
           </div>
         </div>
@@ -220,18 +317,7 @@
     </div>
   </footer>
 
-  <script src="node_modules/jquery/dist/jquery.min.js"></script>
-  <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-
-  <script>
-    $('#farmaciaTabs a').on('click', function (e) {
-      e.preventDefault();
-      $(this).tab('show');
-    });
-
-    console.log("jQuery:", typeof $);
-    console.log("Bootstrap tab:", $.fn && $.fn.tab ? typeof $.fn.tab : "undefined");
-  </script>
+  <!-- Bootstrap 5 bundle (includes Popper) -->
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
