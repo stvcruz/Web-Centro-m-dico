@@ -1,0 +1,25 @@
+$amarillo: #ffeb3b;
+$rojo: #f44336;
+$verde: #4caf50;
+
+// ejemplo de uso en jumbotron
+.jumbotron.banner-principal {
+  background-color: $amarillo;
+}
+
+// mixin de márgenes, padding y colores
+@mixin espaciado-y-color($margen, $relleno, $color-bg, $color-text) {
+  margin: $margen;
+  padding: $relleno;
+  background-color: $color-bg;
+  color: $color-text;
+}
+
+// usar mixin en otros estilos
+.footer-amarillo {
+  @include espaciado-y-color(1rem, 1rem, $amarillo, black);
+}
+
+.card-epico {
+  @include espaciado-y-color(0.5rem, 1rem, $verde, white);
+}

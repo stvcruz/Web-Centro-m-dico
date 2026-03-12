@@ -1,0 +1,17 @@
+.jumbotron.banner-principal {
+  background-color: #ffeb3b;
+}
+
+.footer-amarillo {
+  margin: 1rem;
+  padding: 1rem;
+  background-color: #ffeb3b;
+  color: black;
+}
+
+.card-epico {
+  margin: 0.5rem;
+  padding: 1rem;
+  background-color: #4caf50;
+  color: white;
+}
