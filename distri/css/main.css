@@ -1,0 +1,142 @@
+body {
+  padding-top: 70px;
+  background-color: #f8f9fa;
+}
+
+.navbar {
+  padding: 0.9rem 1rem;
+}
+
+.banner-principal {
+  background: linear-gradient(rgba(0, 90, 160, 0.65), rgba(0, 90, 160, 0.65)),
+              url("../img/banner-medico.jpg") center/cover no-repeat;
+  min-height: 420px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 1rem;
+}
+
+.info-box {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 2rem 1.2rem;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+}
+
+.card-servicio {
+  border: none;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-servicio:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.14);
+}
+
+.card-servicio img {
+  height: 220px;
+  object-fit: cover;
+}
+
+.card-title {
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.card-text {
+  color: #555;
+}
+
+.breadcrumb {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 0.75rem 1rem;
+}
+
+.tabla-servicios {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 0.5rem;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+}
+
+.thead-primary {
+  background-color: #007bff;
+  color: white;
+}
+
+.table td,
+.table th {
+  vertical-align: middle !important;
+}
+
+.card {
+  border-radius: 14px;
+}
+
+.form-control,
+.btn {
+  border-radius: 10px;
+}
+
+.nav-tabs .nav-link,
+.nav-pills .nav-link {
+  font-weight: 600;
+  border-radius: 10px 10px 0 0;
+}
+
+.nav-pills .nav-link {
+  border-radius: 10px;
+}
+
+.tab-content .card {
+  border-radius: 14px;
+}
+
+footer {
+  margin-top: 40px;
+}
+
+.oi {
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .banner-principal {
+    min-height: 320px;
+    padding: 2rem 1rem;
+  }
+
+  .banner-principal h1 {
+    font-size: 2rem;
+  }
+
+  .card-servicio img {
+    height: 180px;
+  }
+
+  .nav-tabs .nav-link,
+  .nav-pills .nav-link {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0.35rem;
+    border-radius: 10px;
+  }
+}
+#accordionCompra .card-header {
+  background-color: #f8f9fa;
+}
+
+#accordionCompra .btn-link {
+  color: #212529;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+#accordionCompra .btn-link:hover {
+  text-decoration: none;
+}

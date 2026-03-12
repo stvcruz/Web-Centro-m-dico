@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <title>Servicios - Centro Médico San Agustín</title>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <span class="oi oi-plus mr-2"></span>
+        Centro Médico San Agustín
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContenido"
+        aria-controls="navbarContenido" aria-expanded="false" aria-label="Menú de navegación">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarContenido">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">
+              <span class="oi oi-home mr-1"></span> Inicio
+            </a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="servicios.html">
+              <span class="oi oi-briefcase mr-1"></span> Servicios
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="farmacia.html">
+              <span class="oi oi-cart mr-1"></span> Farmacia
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.html">
+              <span class="oi oi-envelope-closed mr-1"></span> Contacto
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container mt-4">
+
+    <h1 class="mb-4">
+      <span class="oi oi-briefcase mr-2"></span>Nuestros Servicios
+    </h1>
+
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb shadow-sm">
+        <li class="breadcrumb-item">
+          <a href="index.html"><span class="oi oi-home mr-1"></span>Inicio</a>
+        </li>
+        <li class="breadcrumb-item active" aria-current="page">Servicios</li>
+      </ol>
+    </nav>
+
+    <p class="mb-4">
+      A continuación puedes ver una comparación de nuestros principales servicios médicos.
+    </p>
+
+    <div class="table-responsive tabla-servicios mb-5">
+      <table class="table table-bordered table-hover table-striped text-center align-middle mb-0">
+        <thead class="thead-primary">
+          <tr>
+            <th>Servicio</th>
+            <th>Horario</th>
+            <th>Atención inmediata</th>
+            <th>Especialista</th>
+            <th>Costo accesible</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="oi oi-person mr-1 text-primary"></span> Consulta General</td>
+            <td>Lunes a sábado</td>
+            <td><span class="oi oi-check text-success"></span></td>
+            <td><span class="oi oi-check text-success"></span></td>
+            <td><span class="oi oi-check text-success"></span></td>
+          </tr>
+          <tr>
+            <td><span class="oi oi-beaker mr-1 text-primary"></span> Laboratorio Clínico</td>
+            <td>Lunes a viernes</td>
+            <td><span class="oi oi-x text-danger"></span></td>
+            <td><span class="oi oi-check text-success"></span></td>
+            <td><span class="oi oi-check text-success"></span></td>
+          </tr>
+          <tr>
+            <td><span class="oi oi-warning mr-1 text-primary"></span> Emergencias</td>
+            <td>24 horas</td>
+            <td><span class="oi oi-check text-success"></span></td>
+            <td><span class="oi oi-check text-success"></span></td>
+            <td><span class="oi oi-x text-danger"></span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <section class="mb-5">
+      <div class="row">
+        <div class="col-md-4 mb-4 d-flex">
+          <div class="card card-servicio w-100">
+            <img src="img/consulta-general.jpg" class="card-img-top" alt="Consulta General">
+            <div class="card-body">
+              <h5 class="card-title">Consulta General</h5>
+              <p class="card-text">Atención médica inicial y orientación para el tratamiento adecuado.</p>
+            </div>
+            <div class="card-footer bg-white border-top-0 text-center">
+              Servicio disponible
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4 d-flex">
+          <div class="card card-servicio w-100">
+            <img src="img/laboratorio-clinico.jpg" class="card-img-top" alt="Laboratorio Clínico">
+            <div class="card-body">
+              <h5 class="card-title">Laboratorio Clínico</h5>
+              <p class="card-text">Análisis y pruebas clínicas con resultados oportunos y confiables.</p>
+            </div>
+            <div class="card-footer bg-white border-top-0 text-center">
+              Resultados rápidos
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4 d-flex">
+          <div class="card card-servicio w-100">
+            <img src="img/emergencias.jpg" class="card-img-top" alt="Emergencias">
+            <div class="card-body">
+              <h5 class="card-title">Emergencias</h5>
+              <p class="card-text">Atención inmediata ante casos urgentes las 24 horas.</p>
+            </div>
+            <div class="card-footer bg-white border-top-0 text-center">
+              Atención prioritaria
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="bg-dark text-white py-4 text-center">
+    <div class="container">
+      <p class="mb-1">© 2026 Centro Médico San Agustín</p>
+      <p class="mb-1"><span class="oi oi-map-marker mr-1"></span> Dirección: Cartavio - La Libertad</p>
+      <p class="mb-0"><span class="oi oi-phone mr-1"></span> Teléfono: +51 999 999 999</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 bundle (includes Popper) -->
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

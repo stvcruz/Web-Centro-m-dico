@@ -1,0 +1,24 @@
+@amarillo: #ffeb3b;
+@rojo: #f44336;
+@verde: #4caf50;
+
+/* uso simple de variable */
+.banner-1 {
+  background-color: @amarillo;
+}
+
+/* mixin en Less */
+.margin-padding-color(@m, @p, @bg, @color) {
+  margin: @m;
+  padding: @p;
+  background-color: @bg;
+  color: @color;
+}
+
+.footer-amarillo {
+  .margin-padding-color(1rem, 1rem, @amarillo, black);
+}
+
+.card-epico {
+  .margin-padding-color(0.5rem, 1rem, @verde, white);
+}

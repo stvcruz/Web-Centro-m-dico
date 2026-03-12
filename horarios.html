@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <title>Control de Horarios - Portal Empleados</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><span class="oi oi-plus mr-2"></span>Portal Empleados - San Agustín</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContenido" aria-controls="navbarContenido" aria-expanded="false" aria-label="Menú de navegación">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarContenido">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Dashboard</a></li>
+          <li class="nav-item"><a class="nav-link" href="expediente.html">Expediente Clínico</a></li>
+          <li class="nav-item"><a class="nav-link" href="citas.html">Gestión de Citas</a></li>
+          <li class="nav-item"><a class="nav-link" href="recetario.html">Recetario Electrónico</a></li>
+          <li class="nav-item"><a class="nav-link" href="interconsultas.html">Interconsultas</a></li>
+          <li class="nav-item"><a class="nav-link" href="portal-empleado.html">Portal Empleado</a></li>
+          <li class="nav-item active"><a class="nav-link" href="horarios.html">Control de Horarios</a></li>
+          <li class="nav-item"><a class="nav-link" href="inventarios.html">Inventarios</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container mt-5 pt-4">
+    <h1 class="mb-4">Control de Horarios</h1>
+
+    <div class="mb-3">
+      <p>Hora actual: <span id="reloj"></span></p>
+      <button id="btnEntrada" class="btn btn-success me-2">Registrar Entrada</button>
+      <button id="btnSalida" class="btn btn-danger">Registrar Salida</button>
+    </div>
+
+    <h3>Timeline del día</h3>
+    <ul id="timeline" class="list-group mb-4">
+      <!-- entradas generadas por JS -->
+    </ul>
+
+    <h3>Resumen mensual</h3>
+    <table class="table table-bordered w-50">
+      <thead><tr><th>Día</th><th>Horas</th></tr></thead>
+      <tbody>
+        <tr><td>10/03</td><td>8h</td></tr>
+        <tr><td>11/03</td><td>7.5h</td></tr>
+      </tbody>
+    </table>
+  </main>
+
+  <footer class="bg-dark text-white py-3 text-center mt-5">
+    <p class="mb-0">© 2026 Centro Médico San Agustín - Portal Interno</p>
+  </footer>
+
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    function actualizarReloj() {
+      var ahora = new Date();
+      document.getElementById('reloj').textContent = ahora.toLocaleTimeString();
+    }
+    setInterval(actualizarReloj, 1000);
+    actualizarReloj();
+
+    var timeline = document.getElementById('timeline');
+    document.getElementById('btnEntrada').addEventListener('click', function() {
+      var li = document.createElement('li');
+      li.className = 'list-group-item';
+      li.textContent = 'Entrada: ' + new Date().toLocaleTimeString();
+      timeline.appendChild(li);
+    });
+    document.getElementById('btnSalida').addEventListener('click', function() {
+      var li = document.createElement('li');
+      li.className = 'list-group-item';
+      li.textContent = 'Salida: ' + new Date().toLocaleTimeString();
+      timeline.appendChild(li);
+    });
+  </script>
+</body>
+</html>

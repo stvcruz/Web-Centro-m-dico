@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <title>Interconsultas - Portal Empleados</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><span class="oi oi-plus mr-2"></span>Portal Empleados - San Agustín</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContenido" aria-controls="navbarContenido" aria-expanded="false" aria-label="Menú de navegación">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarContenido">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Dashboard</a></li>
+          <li class="nav-item"><a class="nav-link" href="expediente.html">Expediente Clínico</a></li>
+          <li class="nav-item"><a class="nav-link" href="citas.html">Gestión de Citas</a></li>
+          <li class="nav-item"><a class="nav-link" href="recetario.html">Recetario Electrónico</a></li>
+          <li class="nav-item active"><a class="nav-link" href="interconsultas.html">Interconsultas</a></li>
+          <li class="nav-item"><a class="nav-link" href="portal-empleado.html">Portal Empleado</a></li>
+          <li class="nav-item"><a class="nav-link" href="horarios.html">Control de Horarios</a></li>
+          <li class="nav-item"><a class="nav-link" href="inventarios.html">Inventarios</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container mt-5 pt-4">
+    <h1 class="mb-4">Módulo de Interconsultas</h1>
+
+    <!-- solicitud -->
+    <div class="card mb-4">
+      <div class="card-body">
+        <form>
+          <div class="mb-3">
+            <label for="especialidad" class="form-label">Especialidad</label>
+            <select id="especialidad" class="form-select">
+              <option>Cardiología</option>
+              <option>Neurología</option>
+              <option>Dermatología</option>
+            </select>
+          </div>
+          <button class="btn btn-primary" type="submit">Solicitar interconsulta</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- lista pendiente accordion -->
+    <div class="accordion mb-4" id="accordionPendientes">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            Pendiente: Cardiología - Paciente Juan Pérez
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionPendientes">
+          <div class="accordion-body">
+            Fecha solicitada: 12/03/2026
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- historial -->
+    <div class="card">
+      <div class="card-header">Historial de interconsultas</div>
+      <div class="card-body">
+        <ul class="list-group">
+          <li class="list-group-item">05/02/2026 - Neurología - Resuelta</li>
+          <li class="list-group-item">20/01/2026 - Dermatología - Pendiente</li>
+        </ul>
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-dark text-white py-3 text-center mt-5">
+    <p class="mb-0">© 2026 Centro Médico San Agustín - Portal Interno</p>
+  </footer>
+
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

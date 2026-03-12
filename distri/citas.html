@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <title>Gestión de Citas - Portal Empleados</title>
+</head>
+<body>
+  <!-- navbar same as others -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><span class="oi oi-plus mr-2"></span>Portal Empleados - San Agustín</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContenido" aria-controls="navbarContenido" aria-expanded="false" aria-label="Menú de navegación">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarContenido">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Dashboard</a></li>
+          <li class="nav-item"><a class="nav-link" href="expediente.html">Expediente Clínico</a></li>
+          <li class="nav-item active"><a class="nav-link" href="citas.html">Gestión de Citas</a></li>
+          <li class="nav-item"><a class="nav-link" href="recetario.html">Recetario Electrónico</a></li>
+          <li class="nav-item"><a class="nav-link" href="interconsultas.html">Interconsultas</a></li>
+          <li class="nav-item"><a class="nav-link" href="portal-empleado.html">Portal Empleado</a></li>
+          <li class="nav-item"><a class="nav-link" href="horarios.html">Control de Horarios</a></li>
+          <li class="nav-item"><a class="nav-link" href="inventarios.html">Inventarios</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container mt-5 pt-4">
+    <h1 class="mb-4">Gestión de Citas y Turnos</h1>
+
+    <!-- calendar placeholder -->
+    <div class="card mb-4">
+      <div class="card-header">Calendario</div>
+      <div class="card-body">
+        <p>(Aquí iría un calendario interactivo)</p>
+      </div>
+    </div>
+
+    <!-- new appointment modal trigger -->
+    <button class="btn btn-success mb-3" data-bs-toggle="modal" data-bs-target="#modalCita">Nueva cita</button>
+
+    <!-- list of scheduled appointments -->
+    <div class="table-responsive">
+      <table class="table table-striped">
+        <thead>
+          <tr><th>Fecha</th><th>Paciente</th><th>Servicio</th><th>Acciones</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>12/03/2026 10:00</td><td>María López</td><td>Consulta General</td><td><button class="btn btn-sm btn-warning">Editar</button></td></tr>
+          <tr><td>12/03/2026 11:00</td><td>Carlos Ruiz</td><td>Laboratorio</td><td><button class="btn btn-sm btn-warning">Editar</button></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+
+  <!-- modal for new appointment -->
+  <div class="modal fade" id="modalCita" tabindex="-1" aria-labelledby="modalCitaLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalCitaLabel">Nueva Cita</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="citaPaciente" class="form-label">Paciente</label>
+              <input type="text" class="form-control" id="citaPaciente">
+            </div>
+            <div class="mb-3">
+              <label for="citaFecha" class="form-label">Fecha y Hora</label>
+              <input type="datetime-local" class="form-control" id="citaFecha">
+            </div>
+            <div class="mb-3">
+              <label for="citaServicio" class="form-label">Servicio</label>
+              <select class="form-select" id="citaServicio">
+                <option>Consulta General</option>
+                <option>Laboratorio</option>
+                <option>Emergencias</option>
+              </select>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-primary">Guardar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="bg-dark text-white py-3 text-center mt-5">
+    <p class="mb-0">© 2026 Centro Médico San Agustín - Portal Interno</p>
+  </footer>
+
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

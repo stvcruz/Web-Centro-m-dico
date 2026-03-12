@@ -1,12 +1,58 @@
-**Edit a file, create a new file, and clone from Bitbucket in under 2 minutes**
+# Portal Empleados – Centro Médico San Agustín
 
-When you're done, you can delete the content in this README and update the file with details for others getting started with your repository.
+Este repositorio contiene una aplicación estática basada en Bootstrap 5 y herramientas de front‑end. El sitio se desarrolla con **SCSS**, **npm scripts**, **Grunt/Gulp** y puede ser empacado para producción en la carpeta `distri`.
 
-*We recommend that you open this README in another tab as you perform the tasks below. You can [watch our video](https://youtu.be/0ocf7u76WSo) for a full demo of all the steps in this tutorial. Open the video in a new tab to avoid leaving Bitbucket.*
+> El contenido de las secciones antiguas se ha eliminado; a continuación se explican los pasos útiles para construir y desplegar el proyecto.
+
+## Instalación y desarrollo
+
+1. Clona el repositorio y abre la carpeta de trabajo.
+2. Instala dependencias:
+   ```bash
+   npm install
+   ```
+3. Compila SCSS manualmente:
+   ```bash
+   npm run scss
+   ```
+   También hay un ejemplo de archivo **Less** (`css/styles.less`); puede compilarse con
+   ```bash
+   npm run less
+   ```
+4. Para mantener CSS actualizado mientras editas scss usa el watcher:
+   ```bash
+   npm run watch:scss
+   ```
+5. Levanta un servidor de desarrollo (también ejecuta el watcher):
+   ```bash
+   npm run start
+   ```
+   Esto ejecuta `lite-server` y `onchange` en paralelo.
+
+## Scripts útiles
+
+| Script | Descripción |
+|--------|-------------|
+| `npm run scss` | Compila todos los `.scss` en `css/` usando Dart Sass. |
+| `npm run watch:scss` | Observa cambios en SCSS y recompila automáticamente. |
+| `npm run dev` | Arranca `lite-server` para servir el contenido localmente. |
+| `npm run start` | Ejecuta `watch:scss` y `dev` en paralelo con **concurrently**. |
+| `npm run build` | Borra `distri` y copia HTML, CSS, e imágenes a `distri` (preparación para despliegue). |
+
+También existen tareas con **Gulp** y **Grunt**:
+- `gulp` o `gulp default` compila SCSS y construye `distri`.
+- `grunt` o `grunt build` hace lo mismo usando Grunt.
+
+> Para utilizar `imagemin-cli` globalmente (optimizar imágenes) se recomienda:
+> ```bash
+> npm install -g imagemin-cli --unsafe-perm=true --allow-root
+> ```
+
+## Preparar salida para servidor
+
+Ejecuta `npm run build` (o `gulp` / `grunt`) y sube el contenido de la carpeta `distri` al servidor web. Esa carpeta contiene los archivos estáticos listos para producción.
 
 ---
-
-## Edit a file
 
 You’ll start by editing this README file to learn how to edit a file in Bitbucket.
 

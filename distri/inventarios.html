@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <title>Gestión de Inventarios - Portal Empleados</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><span class="oi oi-plus mr-2"></span>Portal Empleados - San Agustín</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContenido" aria-controls="navbarContenido" aria-expanded="false" aria-label="Menú de navegación">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarContenido">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Dashboard</a></li>
+          <li class="nav-item"><a class="nav-link" href="expediente.html">Expediente Clínico</a></li>
+          <li class="nav-item"><a class="nav-link" href="citas.html">Gestión de Citas</a></li>
+          <li class="nav-item"><a class="nav-link" href="recetario.html">Recetario Electrónico</a></li>
+          <li class="nav-item"><a class="nav-link" href="interconsultas.html">Interconsultas</a></li>
+          <li class="nav-item"><a class="nav-link" href="portal-empleado.html">Portal Empleado</a></li>
+          <li class="nav-item"><a class="nav-link" href="horarios.html">Control de Horarios</a></li>
+          <li class="nav-item active"><a class="nav-link" href="inventarios.html">Inventarios</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container mt-5 pt-4">
+    <h1 class="mb-4">Gestión de Inventarios</h1>
+
+    <!-- statistics cards -->
+    <div class="row mb-4">
+      <div class="col-md-4">
+        <div class="card text-white bg-success mb-3">
+          <div class="card-body">
+            <h5 class="card-title">Disponibles</h5>
+            <p class="card-text">120 ítems</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card text-white bg-warning mb-3">
+          <div class="card-body">
+            <h5 class="card-title">Bajo</h5>
+            <p class="card-text">15 ítems</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card text-white bg-danger mb-3">
+          <div class="card-body">
+            <h5 class="card-title">Agotados</h5>
+            <p class="card-text">3 ítems</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- inventory table -->
+    <div class="table-responsive">
+      <table class="table table-bordered table-striped text-center align-middle">
+        <thead class="thead-primary">
+          <tr>
+            <th>Producto</th>
+            <th>Stock</th>
+            <th>Estado</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Paracetamol</td>
+            <td>35</td>
+            <td><span class="badge bg-success">Disponible</span></td>
+            <td><button class="btn btn-sm btn-warning">Reportar</button></td>
+          </tr>
+          <tr>
+            <td>Vitamina C</td>
+            <td>5</td>
+            <td><span class="badge bg-warning">Bajo</span></td>
+            <td><button class="btn btn-sm btn-warning">Reportar</button></td>
+          </tr>
+          <tr>
+            <td>Alcohol Medicinal</td>
+            <td>0</td>
+            <td><span class="badge bg-danger">Agotado</span></td>
+            <td><button class="btn btn-sm btn-warning">Reportar</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+
+  <footer class="bg-dark text-white py-3 text-center mt-5">
+    <p class="mb-0">© 2026 Centro Médico San Agustín - Portal Interno</p>
+  </footer>
+
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <title>Recetario Electrónico - Portal Empleados</title>
+</head>
+<body>
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><span class="oi oi-plus mr-2"></span>Portal Empleados - San Agustín</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContenido" aria-controls="navbarContenido" aria-expanded="false" aria-label="Menú de navegación">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarContenido">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Dashboard</a></li>
+          <li class="nav-item"><a class="nav-link" href="expediente.html">Expediente Clínico</a></li>
+          <li class="nav-item"><a class="nav-link" href="citas.html">Gestión de Citas</a></li>
+          <li class="nav-item active"><a class="nav-link" href="recetario.html">Recetario Electrónico</a></li>
+          <li class="nav-item"><a class="nav-link" href="interconsultas.html">Interconsultas</a></li>
+          <li class="nav-item"><a class="nav-link" href="portal-empleado.html">Portal Empleado</a></li>
+          <li class="nav-item"><a class="nav-link" href="horarios.html">Control de Horarios</a></li>
+          <li class="nav-item"><a class="nav-link" href="inventarios.html">Inventarios</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container mt-5 pt-4">
+    <h1 class="mb-4">Recetario Electrónico</h1>
+
+    <!-- generate recipe form -->
+    <button class="btn btn-success mb-3" data-bs-toggle="modal" data-bs-target="#modalReceta">Nueva receta</button>
+
+    <!-- list of recent prescriptions -->
+    <div class="table-responsive">
+      <table class="table table-striped">
+        <thead><tr><th>Fecha</th><th>Paciente</th><th>Medicamento</th><th>Acciones</th></tr></thead>
+        <tbody>
+          <tr><td>10/03/2026</td><td>Pedro Gómez</td><td>Amoxicilina</td><td><button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#modalPreview">Ver</button></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+
+  <!-- new recipe modal -->
+  <div class="modal fade" id="modalReceta" tabindex="-1" aria-labelledby="modalRecetaLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalRecetaLabel">Generar Receta</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="recetaPaciente" class="form-label">Paciente</label>
+              <input type="text" class="form-control" id="recetaPaciente">
+            </div>
+            <div class="mb-3">
+              <label for="recetaMedicamento" class="form-label">Medicamento</label>
+              <input type="text" class="form-control" id="recetaMedicamento">
+            </div>
+            <div class="mb-3">
+              <label for="recetaDosis" class="form-label">Dosis</label>
+              <input type="text" class="form-control" id="recetaDosis">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-primary">Guardar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- preview modal -->
+  <div class="modal fade" id="modalPreview" tabindex="-1" aria-labelledby="modalPreviewLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalPreviewLabel">Vista previa de Receta</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+          <p>Receta para Pedro Gómez</p>
+          <p>Amoxicilina 500mg - Tomar cada 8 horas</p>
+          <p><em>Firma digital: ___________________</em></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="bg-dark text-white py-3 text-center mt-5">
+    <p class="mb-0">© 2026 Centro Médico San Agustín - Portal Interno</p>
+  </footer>
+
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
